@@ -1,0 +1,5 @@
+{
+  "name": "BootBoost",
+  "description": "A dashboard and simulation for the BootBoost PC startup optimization system. Visualizes resource monitoring, process analysis, and automated load reduction logic.",
+  "requestFramePermissions": []
+}

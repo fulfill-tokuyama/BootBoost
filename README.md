@@ -1,11 +1,28 @@
-<div align="center">
+# BootBoost Web Dashboard
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+BootBoost PC起動最適化システムのWebベースシミュレーションおよびダッシュボードです。
 
-  <h1>Built with AI Studio</h2>
+## 概要
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+BootBoostは、リソース使用状況を監視し、重いプロセスを最適化することで、起動直後のPC負荷を軽減するように設計されています。このWebアプリケーションは、システムのUIとロジックをデモンストレーションします。
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 機能
 
-</div>
+- **ダッシュボード**: CPU、メモリ、ディスク使用率のリアルタイム監視（シミュレーション）。
+- **プロセス管理**: 実行中のプロセスとそのリソース消費を表示。
+- **最適化**: プロセスの最適化（優先度を下げる）や起動遅延をシミュレーション。
+- **ルール**: 遅延ルールやホワイト/ブラックリストの設定。
+
+## シミュレーション
+
+アプリケーションはPCの起動シーケンスをシミュレーションします：
+1.  **0-60秒**: 高負荷シミュレーション（CPU/ディスクのスパイク）。
+2.  **プロセス**: OneDrive、Teams、Chromeなどのシミュレーションされたプロセスが異なるタイミングで起動します。
+3.  **最適化**: 「最適化」をクリックすると、プロセスのシミュレーション負荷が軽減されます。
+
+## 技術スタック
+
+- React
+- Tailwind CSS
+- Recharts (グラフ用)
+- Zustand (状態管理用)
